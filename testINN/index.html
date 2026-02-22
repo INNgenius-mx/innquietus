@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INNquietus — Traducimos lo difícil del marketing a lo humano</title>
+    <meta name="description"
+        content="INNquietus: El juego del marketing. Facilitando el marketing para negocios reales con resultados tangibles, sin términos rebuscados." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="INNquietus — El Juego del Marketing" />
+    <meta property="og:description"
+        content="Traducimos lo difícil del marketing a lo humano. Estrategias reales para negocios reales." />
+    <meta property="og:image" content="/Imagenes/logINN.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/png" href="/Imagenes/logINN.png" />
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF5900">
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MarketingAgency",
+        "name": "INNquietus",
+        "description": "Traducimos lo difícil del marketing a lo humano. Estrategias reales para negocios reales.",
+        "url": "https://innquietus.com",
+        "logo": "/Imagenes/logINN.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ciudad de México",
+            "addressCountry": "MX"
+        },
+        "sameAs": [
+            "https://instagram.com/innquietus",
+            "https://facebook.com/innquietus",
+            "https://linkedin.com/company/innquietus",
+            "https://tiktok.com/@innquietus"
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- SCROLL PROGRESS BAR (XP Bar) -->
+    <div class="xp-bar" id="xpBar">
+        <div class="xp-bar__fill" id="xpBarFill"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar__container">
+            <a href="#hero" class="navbar__logo">
+                <img src="/Imagenes/logINN.png" alt="INNquietus Logo" class="navbar__logo-img" />
+                <span class="navbar__brand">INN<span class="accent-orange">quietus</span></span>
+            </a>
+            <div class="navbar__links" id="navLinks">
+                <a href="#hero" class="navbar__link" data-section="hero">Inicio</a>
+                <a href="#brujula" class="navbar__link" data-section="brujula">Brújula</a>
+                <a href="#servicios" class="navbar__link" data-section="servicios">Servicios</a>
+                <a href="#confesionario" class="navbar__link" data-section="confesionario">Testimonios</a>
+                <a href="#contacto" class="navbar__link" data-section="contacto">Contacto</a>
+            </div>
+            <div class="navbar__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <img src="/Imagenes/logINN.png" alt="Toggle tema" class="theme-toggle__astro-img" />
+                </button>
+                <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION — "El Tablero de Inicio" -->
+    <section class="hero" id="hero">
+        <div class="hero__particles" id="heroParticles"></div>
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__badge">🎮 El Juego del Marketing</div>
+                <h1 class="hero__title">
+                    <span class="hero__word hero__word--1">Traducimos</span>
+                    <span class="hero__word hero__word--2">lo difícil</span>
+                    <span class="hero__word hero__word--3">a lo <span class="accent-orange">humano.</span></span>
+                </h1>
+                <p class="hero__subtitle">
+                    El marketing ya no es una caja negra.<br />
+                    Es tu próxima <span class="accent-purple">jugada maestra.</span>
+                </p>
+                <div class="hero__ctas">
+                    <a href="#servicios" class="btn btn--primary btn--lego">
+                        <span class="btn__studs"></span>
+                        Empezar el Juego
+                    </a>
+                    <a href="#brujula" class="btn btn--secondary">
+                        Ver la Brújula
+                    </a>
+                </div>
+                <div class="hero__social">
+                    <a href="https://instagram.com/innquietus" target="_blank" rel="noopener" class="hero__social-link"
+                        aria-label="Instagram">📸</a>
+                    <a href="https://facebook.com/innquietus" target="_blank" rel="noopener" class="hero__social-link"
+                        aria-label="Facebook">📘</a>
+                    <a href="https://linkedin.com/company/innquietus" target="_blank" rel="noopener"
+                        class="hero__social-link" aria-label="LinkedIn">💼</a>
+                    <a href="https://tiktok.com/@innquietus" target="_blank" rel="noopener" class="hero__social-link"
+                        aria-label="TikTok">🎵</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__lego-scene">
+                    <div class="lego-block lego-block--hero lego-block--orange float-1"></div>
+                    <div class="lego-block lego-block--hero lego-block--purple float-2"></div>
+                    <div class="lego-block lego-block--hero lego-block--yellow float-3"></div>
+                    <div class="lego-block lego-block--hero lego-block--gray float-4"></div>
+                    <img src="/Imagenes/Innherofeli.png" alt="INNquietus - El Tablero de Juego del Marketing"
+                        class="hero__astronaut" />
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll-hint">
+            <span>Scroll para jugar</span>
+            <div class="hero__scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- BRÚJULA SECTION — "La Brújula" (Propuesta de Valor) -->
+    <section class="brujula" id="brujula">
+        <div class="section__container">
+            <div class="section__header reveal-up">
+                <span class="section__badge">🧭 Nivel 2</span>
+                <h2 class="section__title">La Brújula <span class="accent-purple">INNquieta</span></h2>
+                <p class="section__subtitle">Nuestra brújula no marca el norte. Marca el resultado.</p>
+            </div>
+            <div class="section__visual reveal-up">
+                <img src="/Imagenes/brujula-cosmic-console.png" alt="INNquietus Brújula - Cosmic Console"
+                    class="section__hero-img" loading="lazy" />
+            </div>
+            <div class="brujula__grid">
+                <div class="brujula__card brujula__card--orange reveal-left" data-value="claridad">
+                    <div class="brujula__card-inner">
+                        <div class="brujula__icon">🧭</div>
+                        <h3 class="brujula__card-title">Claridad Humana</h3>
+                        <p class="brujula__card-text">"Si tu abuela no lo entiende, nosotros lo reescribimos"</p>
+                        <div class="brujula__card-example">
+                            <span class="brujula__label">Ejemplo:</span> Convertimos "funnel omnicanal" en "camino claro
+                            para tus clientes"
+                        </div>
+                    </div>
+                </div>
+                <div class="brujula__card brujula__card--purple reveal-right" data-value="accion">
+                    <div class="brujula__card-inner">
+                        <div class="brujula__icon">⚡</div>
+                        <h3 class="brujula__card-title">Acción Real</h3>
+                        <p class="brujula__card-text">"Tu éxito no está en el reporte. Está en la calle"</p>
+                        <div class="brujula__card-example">
+                            <span class="brujula__label">Ejemplo:</span> No te damos PDFs bonitos, te damos el paso
+                            exacto a seguir mañana
+                        </div>
+                    </div>
+                </div>
+                <div class="brujula__card brujula__card--purple reveal-left" data-value="empatia">
+                    <div class="brujula__card-inner">
+                        <div class="brujula__icon">💜</div>
+                        <h3 class="brujula__card-title">Empatía Radical</h3>
+                        <p class="brujula__card-text">"Hablamos tu idioma, no marketinglish"</p>
+                        <div class="brujula__card-example">
+                            <span class="brujula__label">Ejemplo:</span> Decimos "haz esto" en lugar de "optimiza tu
+                            estrategia de engagement"
+                        </div>
+                    </div>
+                </div>
+                <div class="brujula__card brujula__card--orange reveal-right" data-value="estrategia">
+                    <div class="brujula__card-inner">
+                        <div class="brujula__icon">🎯</div>
+                        <h3 class="brujula__card-title">Inquietud Estratégica</h3>
+                        <p class="brujula__card-text">"Encontramos la chispa que falta en tu ADN"</p>
+                        <div class="brujula__card-example">
+                            <span class="brujula__label">Ejemplo:</span> Descubrimos que tu diferencial no es el precio,
+                            es tu historia
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION — "Construye Tu Estrategia" -->
+    <section class="servicios" id="servicios">
+        <div class="section__container">
+            <div class="section__header reveal-up">
+                <span class="section__badge">🧱 Nivel 3</span>
+                <h2 class="section__title">Construye Tu <span class="accent-orange">Estrategia</span></h2>
+                <p class="section__subtitle">El marketing no es un misterio, es un juego de construcción. Cada pieza
+                    tiene su lugar.</p>
+            </div>
+            <div class="builder reveal-up">
+                <div class="builder__topbar">
+                    <div class="builder__topbar-dots"><span></span><span></span><span></span></div>
+                    <div class="builder__topbar-nav">
+                        <img src="/Imagenes/logINN.png" alt="INNquietus Logo" class="builder__topbar-logo" />
+                        <span>INNquietus</span>
+                    </div>
+                    <div class="builder__topbar-tabs"><span>Agencia</span><span>Portafolio</span><span
+                            class="accent-orange">Servicios</span></div>
+                    <a href="#contacto" class="builder__topbar-cta">Let's Play</a>
+                </div>
+                <div class="builder__body">
+                    <div class="builder__sidebar">
+                        <span class="builder__mod-badge">⚡ MÓDULO DE SERVICIOS v3.0</span>
+                        <h3 class="builder__sidebar-title">Construye Tu<br>Estrategia</h3>
+                        <p class="builder__sidebar-desc">El marketing no es magia, es ingeniería. Selecciona los bloques
+                            que necesitas para armar una estructura sólida. Cada pieza encaja perfectamente para
+                            construir crecimiento real.</p>
+                        <span class="builder__inv-label">INVENTARIO: KITS DISPONIBLES</span>
+                        <div class="builder__kit builder__kit--orange" data-kit="strategy" data-title="Strategy Core"
+                            data-desc="Auditoría completa de tu ecosistema digital. Definición de KPIs reales y roadmap de ejecución."
+                            data-image="/Imagenes/innpensar.png">
+                            <div class="builder__kit-dot"></div>
+                            <div><strong>Strategy Core</strong><small>PASO 1: LA FUNDACIÓN. Alinea los bloques de
+                                    Estrategia. Base sólida. Auditoría completa.</small></div>
+                        </div>
+                        <div class="builder__kit builder__kit--yellow" data-kit="marketing"
+                            data-title="Marketing para Mortales"
+                            data-desc="Contenido que conecta, no que vende humo. Parrillas de contenido, guiones y diseño gráfico con alma."
+                            data-image="/Imagenes/innpensar.png">
+                            <div class="builder__kit-dot"></div>
+                            <div><strong>Marketing para Mortales</strong><small>PASO 2: CONECTA ELEMENTOS HUMANOS.
+                                    Agrega módulos de Contenido. Engancha a tu audiencia.</small></div>
+                        </div>
+                        <div class="builder__kit builder__kit--purple" data-kit="growth"
+                            data-title="Growth Energy (Ads)"
+                            data-desc="Campañas de pauta en Meta y Google Ads optimizadas para conversión. Deja de quemar presupuesto."
+                            data-image="/Imagenes/innpensar.png">
+                            <div class="builder__kit-dot"></div>
+                            <div><strong>Growth Energy (Ads)</strong><small>PASO 3: INYECTA ENERGÍA. Añade bloques de
+                                    Energía. Acelera el tráfico. Impulsa el alcance.</small></div>
+                        </div>
+                        <div class="builder__kit builder__kit--green" data-kit="seo" data-title="SEO Foundation"
+                            data-desc="Posicionamiento orgánico para que te encuentren cuando te buscan. Estructura técnica y semántica."
+                            data-image="/Imagenes/innpensar.png">
+                            <div class="builder__kit-dot"></div>
+                            <div><strong>SEO Foundation</strong><small>PASO 4: POSICIONA. Embebe bloques SEO. Asegura
+                                    estabilidad a largo plazo. Escala rankings.</small></div>
+                        </div>
+                        <div class="builder__kit builder__kit--gray" data-kit="data" data-title="Data Blueprint"
+                            data-desc="Dashboards en tiempo real. Interpretación de datos para tomar decisiones, no corazonadas."
+                            data-image="/Imagenes/innpensar.png">
+                            <div class="builder__kit-dot"></div>
+                            <div><strong>Data Blueprint</strong><small>PASO 5: MONITOREA. Conecta el Panel de Analítica.
+                                    Revisa rendimiento. Optimiza ROI.</small></div>
+                        </div>
+                    </div>
+                    <div class="builder__center">
+                        <span class="builder__fig">FIG. 01</span>
+                        <img src="/Imagenes/innpensar.png" alt="INNquietus Constructor de Estrategia"
+                            class="builder__construction" loading="lazy" />
+                        <div class="builder__stat-badge"><span>+145%</span><small>engagement promedio</small></div>
+                        <div class="builder__location">📍 Ciudad de México</div>
+                    </div>
+                    <div class="builder__manual">
+                        <span class="builder__manual-badge">📋 MANUAL DE CONSTRUCCIÓN</span>
+                        <p>Arrastra y conecta los kits en la base. Construye conexiones para maximizar tu ROI.</p>
+                        <div class="builder__manual-steps">
+                            <p>Selecciona un <strong>Kit</strong> para ver el ensamblaje modular. Arrastra y encaja los
+                                kits en tu estrategia personalizada.</p>
+                            <p>Mide las conversiones para máximo <strong>ROI</strong>.</p>
+                        </div>
+                        <span class="builder__new-tag">NUEVO PACK DESBLOQUEADO</span>
+                    </div>
+                </div>
+                <div class="builder__bottom">
+                    <div><span>ENSAMBLAJE FINAL:</span> <strong>Construcción Personalizada</strong></div>
+                    <a href="#contacto" class="btn btn--primary">Empezar a Construir →</a>
+                </div>
+                <div class="builder__footer">© 2026 INNquietus. Todos los sistemas operativos.</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONFESIONARIO SECTION — Social Proof -->
+    <section class="confesionario" id="confesionario">
+        <div class="section__container">
+            <div class="section__header reveal-up">
+                <span class="section__badge">💬 Nivel 4</span>
+                <h2 class="section__title">El <span class="accent-yellow">Confesionario</span></h2>
+                <p class="section__subtitle">Historias reales de negocios que dejaron de complicarse.</p>
+            </div>
+            <div class="confesionario__carousel" id="testimonialCarousel">
+                <button class="carousel__btn carousel__btn--prev" id="prevBtn" aria-label="Anterior">◀</button>
+                <div class="carousel__track-container">
+                    <div class="carousel__track" id="carouselTrack">
+
+                        <div class="testimonio-card">
+                            <div class="testimonio-card__quote">"Dejamos de publicar por publicar y empezamos a conectar
+                                con la gente. Las ventas subieron solas."</div>
+                            <div class="testimonio-card__metric">+40% ventas en 3 meses</div>
+                            <div class="testimonio-card__author">
+                                <div class="testimonio-card__avatar">🧑‍💼</div>
+                                <div>
+                                    <div class="testimonio-card__name">Carlos M.</div>
+                                    <div class="testimonio-card__biz">Restaurante La Esquina</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonio-card">
+                            <div class="testimonio-card__quote">"Por fin alguien que me explicó qué hacer sin usar
+                                palabras de otro planeta. Ahora sé exactamente qué publicar."</div>
+                            <div class="testimonio-card__metric">De 0 a 500 seguidores orgánicos</div>
+                            <div class="testimonio-card__author">
+                                <div class="testimonio-card__avatar">👩‍🍳</div>
+                                <div>
+                                    <div class="testimonio-card__name">Ana R.</div>
+                                    <div class="testimonio-card__biz">Pastelería Dulce Hogar</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonio-card">
+                            <div class="testimonio-card__quote">"Invertimos en una campaña pequeña y nos llovieron
+                                clientes. No necesitábamos un presupuesto grande, necesitábamos dirección."</div>
+                            <div class="testimonio-card__metric">ROI 8x en primera campaña</div>
+                            <div class="testimonio-card__author">
+                                <div class="testimonio-card__avatar">👨‍🔧</div>
+                                <div>
+                                    <div class="testimonio-card__name">Roberto G.</div>
+                                    <div class="testimonio-card__biz">Taller Mecánico RG</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonio-card">
+                            <div class="testimonio-card__quote">"Me ayudaron a descubrir que mi diferencial no era el
+                                precio, era mi historia personal. Ahora la gente llega por mí, no por descuentos."</div>
+                            <div class="testimonio-card__metric">Clientes recurrentes +60%</div>
+                            <div class="testimonio-card__author">
+                                <div class="testimonio-card__avatar">💇‍♀️</div>
+                                <div>
+                                    <div class="testimonio-card__name">Lucía F.</div>
+                                    <div class="testimonio-card__biz">Salón Estilo Propio</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel__btn carousel__btn--next" id="nextBtn" aria-label="Siguiente">▶</button>
+            </div>
+            <div class="carousel__dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- MANIFESTO / CTA SECTION -->
+    <section class="manifesto" id="contacto">
+        <div class="section__container">
+            <div class="manifesto__content reveal-up">
+                <span class="section__badge">🚀 Nivel Final</span>
+                <h2 class="manifesto__title">¿Listo para dejar de pensar<br />y empezar a <span
+                        class="accent-orange">jugar</span>?</h2>
+                <p class="manifesto__text">
+                    No te vendemos humo. Te entregamos el mapa.<br />
+                    Construimos tu estrategia como piezas de Lego: <strong>simple, sólida, escalable.</strong>
+                </p>
+                <div class="manifesto__mantra">
+                    "Estamos INNquietos por tu éxito."
+                </div>
+                <div class="contact-area">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="entry.1234175985" placeholder="Nombra a tu jugador"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="entry.1488210110"
+                                placeholder="donde@te.encontramos.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">TU MENSAJE</label>
+                            <textarea id="message" name="entry.1474608473" placeholder="¿Qué piezas te faltan?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--lego btn--full">
+                            <span class="btn__studs"></span>
+                            Enviar Mensaje 🚀
+                        </button>
+                    </form>
+                    <div class="form-feedback" id="formFeedback"></div>
+                    <div class="contact-or">o también por</div>
+                    <a href="https://wa.me/527712192595?text=Hola%20INNquietus!%20Quiero%20empezar%20el%20juego%20🎮"
+                        target="_blank" rel="noopener" class="btn btn--secondary btn--large">
+                        WhatsApp 💬
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="/Imagenes/logINN.png" alt="INNquietus" class="footer__logo" />
+                    <p class="footer__tagline">Traducimos lo difícil del marketing a lo humano.</p>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__heading">Navegación</h4>
+                    <a href="#hero" class="footer__link">Inicio</a>
+                    <a href="#brujula" class="footer__link">La Brújula</a>
+                    <a href="#servicios" class="footer__link">Servicios</a>
+                    <a href="#confesionario" class="footer__link">Testimonios</a>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__heading">Power-Ups</h4>
+                    <a href="https://instagram.com/innquietus" target="_blank" rel="noopener"
+                        class="footer__link footer__social-link">📸 Instagram</a>
+                    <a href="https://facebook.com/innquietus" target="_blank" rel="noopener"
+                        class="footer__link footer__social-link">📘 Facebook</a>
+                    <a href="https://linkedin.com/company/innquietus" target="_blank" rel="noopener"
+                        class="footer__link footer__social-link">💼 LinkedIn</a>
+                    <a href="https://tiktok.com/@innquietus" target="_blank" rel="noopener"
+                        class="footer__link footer__social-link">🎵 TikTok</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2026 INNquietus. Tu marketing, tu juego, tus reglas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILE CTA STICKY -->
+    <div class="mobile-cta" id="mobileCta">
+        <a href="#contacto" class="btn btn--primary btn--mobile-sticky">🎮 Empezar el Juego</a>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+    "name": "INNquietus — El Juego del Marketing",
+    "short_name": "INNquietus",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0A0A12",
+    "theme_color": "#FF5900",
+    "icons": [
+        {
+            "src": "/Imagenes/logINN.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/Imagenes/logINN.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
