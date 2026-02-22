@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="INNquietus - Descubre tu dirección creativa. Encuentra tu camino profesional con nuestro test de ADN creativo.">
+    <meta name="keywords" content="creatividad, dirección profesional, coaching, desarrollo personal">
+    <meta name="author" content="INNquietus">
+
+    <title>INNquietus | Descubre Tu Dirección Creativa</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="ImagenesINN/INN 3D.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="sr-only">Saltar al contenido principal</a>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="navbar-content">
+            <a href="#" class="navbar-logo" aria-label="INNquietus - Inicio">
+                <img src="ImagenesINN/LOGO INNquietus.png" alt="INNquietus Logo" width="40" height="40">
+                <span>INNquietus</span>
+            </a>
+
+            <ul class="navbar-nav" role="menubar">
+                <li role="none"><a href="#pain-points" role="menuitem">El Problema</a></li>
+                <li role="none"><a href="#test-adn" role="menuitem">Test de ADN</a></li>
+                <li role="none"><a href="#servicios" role="menuitem">Servicios</a></li>
+                <li role="none"><a href="#como-funciona" role="menuitem">Cómo Funciona</a></li>
+                <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="moon-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+
+                <a href="#test-adn" class="btn btn-primary btn-sm hide-mobile">Hacer Test</a>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        width="24" height="24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 1: HERO
+         ═══════════════════════════════════════════════════════════════ -->
+        <section class="hero" id="hero">
+            <div class="hero-decoration" aria-hidden="true">
+                <div class="hero-dot hero-dot-1"></div>
+                <div class="hero-dot hero-dot-2"></div>
+                <div class="hero-dot hero-dot-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="16" height="16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                            <span>Estamos INNquietos por tu éxito</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            Llegó el fin del <span class="highlight">marketing complicado</span>
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Marketing de calle para negocios reales: Resultados tangibles
+                            sin términos en inglés ni procesos rebuscados. Descubre el ADN
+                            de tu negocio con nuestro Test gratuito.
+                        </p>
+
+                        <div class="hero-cta">
+                            <a href="#test-adn" class="btn btn-primary btn-lg">
+                                ¿Tu marketing está vivo?
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="20" height="20">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                            <a href="#servicios" class="btn btn-secondary">
+                                Conoce la Brújula
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="hero-cube float" id="hero-cube">
+                            <img src="ImagenesINN/LOGO INNquietus.png" alt="INNquietus - Logo oficial" loading="eager">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 2: PAIN POINTS
+         ═══════════════════════════════════════════════════════════════ -->
+        <section class="section section-dark" id="pain-points">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">El Problema</span>
+                    <h2 class="section-title">¿Haces de todo y nada da resultados?</h2>
+                    <p class="section-subtitle">
+                        Nos han hecho creer que el marketing es un idioma extraño. Mienten.
+                    </p>
+                </header>
+
+                <div class="grid grid-3 stagger-children">
+                    <article class="card pain-card">
+                        <div class="pain-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="48" height="48">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </div>
+                        <h3 class="pain-title">Mensajes sin respuesta</h3>
+                        <p class="pain-description">
+                            Envías mensajes a tus clientes pero nadie contesta.
+                            Tu WhatsApp parece un monólogo, no una herramienta de ventas.
+                        </p>
+                    </article>
+
+                    <article class="card pain-card">
+                        <div class="pain-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="48" height="48">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="pain-title">Pierdes tiempo y clientes</h3>
+                        <p class="pain-description">
+                            Respondes tarde, no tienes un catálogo organizado y
+                            cada día pierdes oportunidades de venta por no tener un sistema.
+                        </p>
+                    </article>
+
+                    <article class="card pain-card">
+                        <div class="pain-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="48" height="48">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <h3 class="pain-title">Tu competencia te rebasa</h3>
+                        <p class="pain-description">
+                            Mientras tú improvisas, otros negocios ya usan
+                            estrategias para vender más y automatizar desde su celular.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 3: TEST DE ADN (Interactive)
+         ═══════════════════════════════════════════════════════════════ -->
+        <section class="section" id="test-adn">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">Test de ADN de Negocios</span>
+                    <h2 class="section-title">¿Qué tan complicado es tu marketing hoy?</h2>
+                    <p class="section-subtitle">
+                        Responde 5 preguntas y descubre si tu marketing está vivo o en coma
+                    </p>
+                </header>
+
+                <div class="test-container">
+                    <div class="test-card" id="test-card">
+                        <!-- Progress bar -->
+                        <div class="test-progress" role="progressbar" aria-valuenow="1" aria-valuemin="1"
+                            aria-valuemax="5">
+                            <div class="test-progress-step active" data-step="1"></div>
+                            <div class="test-progress-step" data-step="2"></div>
+                            <div class="test-progress-step" data-step="3"></div>
+                            <div class="test-progress-step" data-step="4"></div>
+                            <div class="test-progress-step" data-step="5"></div>
+                        </div>
+
+                        <!-- Question 1 -->
+                        <div class="test-question active" data-question="1">
+                            <h3 class="test-question-text">¿Cómo te describirías en una palabra?</h3>
+                            <div class="test-options" role="radiogroup" aria-label="Opciones de respuesta">
+                                <button class="test-option" role="radio" aria-checked="false" data-value="visionario">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Visionario</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="analitico">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Analítico</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="empatico">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Empático</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="practico">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Práctico</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="test-question" data-question="2">
+                            <h3 class="test-question-text">¿Qué te motiva más en un proyecto?</h3>
+                            <div class="test-options" role="radiogroup" aria-label="Opciones de respuesta">
+                                <button class="test-option" role="radio" aria-checked="false" data-value="innovar">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Innovar y crear algo nuevo</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="resolver">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Resolver problemas complejos</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="ayudar">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Ayudar a otros a crecer</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="resultados">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Ver resultados tangibles</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="test-question" data-question="3">
+                            <h3 class="test-question-text">¿Cuál es tu mayor fortaleza?</h3>
+                            <div class="test-options" role="radiogroup" aria-label="Opciones de respuesta">
+                                <button class="test-option" role="radio" aria-checked="false" data-value="ideas">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Generar ideas originales</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="estrategia">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Pensar estratégicamente</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="conectar">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Conectar con las personas</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="ejecutar">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Ejecutar y completar tareas</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="test-question" data-question="4">
+                            <h3 class="test-question-text">¿Cómo enfrentas los desafíos?</h3>
+                            <div class="test-options" role="radiogroup" aria-label="Opciones de respuesta">
+                                <button class="test-option" role="radio" aria-checked="false" data-value="experimentar">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Experimentando nuevas soluciones</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="analizar">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Analizando datos y patrones</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="colaborar">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Colaborando con el equipo</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="accion">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Pasando a la acción directa</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="test-question" data-question="5">
+                            <h3 class="test-question-text">¿Cuál es tu entorno ideal de trabajo?</h3>
+                            <div class="test-options" role="radiogroup" aria-label="Opciones de respuesta">
+                                <button class="test-option" role="radio" aria-checked="false" data-value="libre">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Libre y flexible, sin restricciones</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="estructurado">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Estructurado y organizado</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="colaborativo">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Colaborativo y en equipo</span>
+                                </button>
+                                <button class="test-option" role="radio" aria-checked="false" data-value="dinamico">
+                                    <span class="test-option-marker"></span>
+                                    <span class="test-option-text">Dinámico y orientado a metas</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Navigation -->
+                        <div class="test-nav">
+                            <button class="btn btn-ghost" id="test-prev" disabled aria-label="Pregunta anterior">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="20" height="20">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7" />
+                                </svg>
+                                Anterior
+                            </button>
+                            <button class="btn btn-primary" id="test-next" disabled aria-label="Siguiente pregunta">
+                                Siguiente
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="20" height="20">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Results (Hidden by default) -->
+                        <div class="test-result" id="test-result">
+                            <div class="test-result-icon pulse-glow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="test-result-title" id="result-title">Tu Perfil Creativo</h3>
+                            <p class="test-result-description" id="result-description">
+                                Descripción del perfil creativo...
+                            </p>
+                            <a href="#contacto" class="btn btn-primary btn-lg">
+                                Agenda tu Consulta Gratuita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 4: VALUE PROPOSITION
+         ═══════════════════════════════════════════════════════════════ -->
+        <section class="section section-dark" id="propuesta-valor">
+            <div class="container">
+                <div class="value-content">
+                    <div class="reveal">
+                        <h2 class="value-statement">
+                            No solo te decimos quién eres.
+                            <span class="emphasis">Te mostramos hacia dónde ir.</span>
+                        </h2>
+                    </div>
+
+                    <div class="value-points stagger-children">
+                        <div class="value-point">
+                            <div class="value-point-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="24" height="24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                                </svg>
+                            </div>
+                            <div class="value-point-content">
+                                <h4>Mapa Personalizado</h4>
+                                <p>Creamos una ruta única basada en tu perfil, fortalezas y aspiraciones reales.</p>
+                            </div>
+                        </div>
+
+                        <div class="value-point">
+                            <div class="value-point-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="24" height="24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                            </div>
+                            <div class="value-point-content">
+                                <h4>Crecimiento Medible</h4>
+                                <p>Metodología probada con resultados que puedes ver y sentir en semanas.</p>
+                            </div>
+                        </div>
+
+                        <div class="value-point">
+                            <div class="value-point-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="24" height="24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <div class="value-point-content">
+                                <h4>Comunidad de Apoyo</h4>
+                                <p>Únete a una red de profesionales creativos que entienden tu camino.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 5: SERVICES (Bento Grid)
+         ═══════════════════════════════════════════════════════════════ -->
+        <section class="section" id="servicios">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">La Brújula</span>
+                    <h2 class="section-title">Servicios que simplifican tu marketing</h2>
+                    <p class="section-subtitle">
+                        Consultoría de ADN y capacitación estratégica para resultados tangibles
+                    </p>
+                </header>
+
+                <div class="bento-grid stagger-children">
+                    <article class="bento-item">
+                        <div class="bento-icon purple"
+                            style="display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-chart-line" style="font-size: 24px;"></i>
+                        </div>
+                        <h3 class="bento-title">Consultoría Digital</h3>
+                        <p class="bento-description">
+                            Entramos en el ADN de tu negocio para rescatar la lógica que el ruido digital te robó.
+                            Estrategias personalizadas para crecimiento sostenible puro.
+                        </p>
+                    </article>
+
+                    <article class="bento-item">
+                        <div class="bento-icon yellow"
+                            style="display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-bullhorn" style="font-size: 24px;"></i>
+                        </div>
+                        <h3 class="bento-title">Redes & Ads</h3>
+                        <p class="bento-description">
+                            Especialistas en Facebook Ads y embudos WhatsApp Business.
+                            Convertimos tus redes en potentes canales de venta, sin excusas ni métricas vanidosas.
+                        </p>
+                    </article>
+
+                    <article class="bento-item">
+                        <div class="bento-icon orange"
+                            style="display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-lightbulb" style="font-size: 24px;"></i>
+                        </div>
+                        <h3 class="bento-title">Diseño de Experiencias</h3>
+                        <p class="bento-description">
+                            Mapeamos el viaje de tu cliente (Customer Journey) para
+                            crear experiencias memorables que fidelizan.
+                        </p>
+                    </article>
+
+                    <article class="bento-item">
+                        <div class="bento-icon purple"
+                            style="display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-graduation-cap" style="font-size: 24px;"></i>
+                        </div>
+                        <h3 class="bento-title">División Despertar (Capacitación)</h3>
+                        <p class="bento-description">
+                            Capacitación y masterclass donde INN-yectamos capacidad de acción, no teoría.
+                            Domina tu marketing de calle.
+                        </p>
+                    </article>
+
+                    <article class="bento-item">
+                        <div class="bento-icon yellow"
+                            style="display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-brain" style="font-size: 24px;"></i>
+                        </div>
+                        <h3 class="bento-title">Metodologías INN</h3>
+                        <p class="bento-description">
+                            Facilitadores certificados en Design Thinking, LEGO Serious Play y Efecto WOW
+                            para resolver problemas con creatividad estructural.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 6: TESTIMONIALS
+         ═══════════════════════════════════════════════════════════════ -->
+        <section class="section section-dark" id="testimonios">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">Testimonios</span>
+                    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                    <p class="section-subtitle">
+                        Historias reales de transformación y crecimiento
+                    </p>
+                </header>
+
+                <div class="testimonials-grid stagger-children">
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">
+                            "Por fin entendí cuál era mi bloqueo. INNquietus me ayudó a ver
+                            lo que estaba frente a mis ojos pero no podía reconocer."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">MC</div>
+                            <div class="testimonial-info">
+                                <h5>María Castellanos</h5>
+                                <p>Diseñadora Gráfica</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">
+                            "El test de ADN fue revelador. Después de 10 años en la industria,
+                            finalmente sé hacia dónde quiero ir. ¡Gracias!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">JR</div>
+                            <div class="testimonial-info">
+                                <h5>Jorge Ramírez</h5>
+                                <p>Director Creativo</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="testimonial-quote">
+                            "La metodología es clara y los resultados son reales.
+                            En 3 meses transformé completamente mi carrera."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">LP</div>
+                            <div class="testimonial-info">
+                                <h5>Laura Pérez</h5>
+                                <p>Emprendedora</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 7: HOW IT WORKS (Steps)
+         ═══════════════════════════════════════════════════════════════ -->
+        <section class="section" id="como-funciona">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">Cómo Funciona</span>
+                    <h2 class="section-title">Tu camino en 3 pasos</h2>
+                    <p class="section-subtitle">
+                        Un proceso simple pero transformador
+                    </p>
+                </header>
+
+                <div class="steps-container stagger-children">
+                    <article class="step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Descubre</h3>
+                        <p class="step-description">
+                            Realiza nuestro Test de ADN Creativo y descubre tu perfil único.
+                            Conoce tus fortalezas ocultas.
+                        </p>
+                    </article>
+
+                    <article class="step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Planifica</h3>
+                        <p class="step-description">
+                            Juntos creamos tu mapa personalizado con metas claras y
+                            acciones concretas para lograrlo.
+                        </p>
+                    </article>
+
+                    <article class="step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Transforma</h3>
+                        <p class="step-description">
+                            Te acompañamos en cada paso del camino mientras
+                            logras tu transformación real.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 8: FAQ
+         ═══════════════════════════════════════════════════════════════ -->
+        <section class="section section-dark" id="faq">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">Preguntas Frecuentes</span>
+                    <h2 class="section-title">¿Tienes dudas?</h2>
+                    <p class="section-subtitle">
+                        Aquí respondemos las preguntas más comunes
+                    </p>
+                </header>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Para quién es INNquietus?</span>
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-content">
+                                INNquietus está diseñado para profesionales creativos, emprendedores
+                                y cualquier persona que sienta que ha perdido su rumbo profesional.
+                                Si te sientes estancado, confundido sobre tu dirección o simplemente
+                                quieres explorar tu potencial, este programa es para ti.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Cuánto tiempo toma ver resultados?</span>
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-content">
+                                La mayoría de nuestros clientes reportan claridad significativa
+                                después de las primeras 2-3 sesiones. Sin embargo, la transformación
+                                completa es un proceso de 8-12 semanas dependiendo de tus objetivos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Cómo funcionan las sesiones de consultoría?</span>
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-content">
+                                Las sesiones son de 60 minutos y se realizan por videollamada.
+                                Usamos una metodología estructurada pero flexible que se adapta
+                                a tus necesidades. Tendrás acceso a grabaciones y recursos
+                                complementarios.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Qué pasa si no estoy satisfecho?</span>
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-content">
+                                Tu satisfacción es nuestra prioridad. Ofrecemos garantía de
+                                devolución completa durante los primeros 14 días. Si sientes
+                                que no es lo que esperabas, te devolvemos tu inversión sin
+                                preguntas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>¿Puedo empezar con una sesión de prueba?</span>
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="faq-answer-content">
+                                ¡Por supuesto! Ofrecemos una consulta inicial gratuita de 30 minutos
+                                donde podemos conocernos, entender tus necesidades y ver si
+                                hacemos buen match. Sin compromiso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+         SECTION 9: FINAL CTA
+         ═══════════════════════════════════════════════════════════════ -->
+        <section class="section cta-section" id="contacto">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Estamos INNquietos por tu éxito</h2>
+                    <p>
+                        Da el primer paso para convertir el marketing de un "gasto confuso"
+                        a una herramienta de disfrute y control. Agenda una consulta gratuita.
+                    </p>
+                    <a href="#test-adn" class="btn btn-primary btn-lg">
+                        Comienza Ahora
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            width="20" height="20">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="ImagenesINN/LOGO INNquietus.png" alt="INNquietus" width="32" height="32">
+                        <span>INNquietus</span>
+                    </a>
+                    <p>
+                        El fin del marketing complicado. Convertimos el caos
+                        en claridad y control para negocios reales.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h6>Navegación</h6>
+                    <ul>
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#test-adn">Test de ADN</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h6>Recursos</h6>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h6>Legal</h6>
+                    <ul>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 INNquietus. Todos los derechos reservados.
+                </p>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter / X">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="scripts/main.js" defer></script>
+</body>
+
+</html>
